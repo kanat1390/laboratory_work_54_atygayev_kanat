@@ -24,6 +24,7 @@ def product_add_view(request):
     if form.is_valid():
         product = form.save()
         return redirect(reverse('shop:product', kwargs={'pk':product.id}))
+    form = ProductForm()
     context = {
         'form': form,
     }
