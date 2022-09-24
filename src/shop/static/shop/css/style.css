@@ -14,3 +14,11 @@ body{
     flex-flow: row wrap;
 }
 
+.name-input{
+    width:50%;
+}
+.price-input, .image-input, .category-input{
+    width:250px;
+}
+
+
