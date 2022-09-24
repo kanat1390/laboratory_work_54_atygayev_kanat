@@ -20,7 +20,7 @@ def product_view(request, pk):
     return render(request, 'shop/product_detail.html', context)
 
 def product_add_view(request):
-    form = ProductForm(request.POST or None)
+    form = ProductForm(request.POST, request.FILES)
     if form.is_valid():
         product = form.save()
         return redirect(reverse('shop:product', kwargs={'pk':product.id}))
@@ -33,7 +33,6 @@ def category_add_view(request):
     form = CategoryForm(request.POST or None)
     if form.is_valid():
         category = form.save()
-        #После создания просмотра детального просмотра category можно перенаправлять туда
         return redirect('shop:products')
     context = {
         'form': form,
