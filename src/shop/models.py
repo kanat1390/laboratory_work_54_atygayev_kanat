@@ -18,6 +18,10 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=15, decimal_places=2, default=0.00)
     image = models.ImageField(null=True, blank=True, upload_to='products/images/')
 
+    @property
+    def get_price(self):
+        return f'{self.price}$'
+
     def __str__(self):
         return self.name
 
