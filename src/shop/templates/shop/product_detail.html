@@ -15,7 +15,9 @@
             <div class="card-body">
                 <h5 class="card-title">{{product.name}}</h5>
                 <p class="card-text"><small class="text-muted">Цена: </small>{{product.get_price}}</p>
-                <p class="card-text"><small class="text-muted">Категория: </small>{{product.category.name}}</p>
+                <p class="card-text"><small class="text-muted">Категория: </small> <a
+                        href="{% url 'shop:products' %}?category={{product.category.name}}">{{product.category.name}}</a>
+                </p>
                 <p class="card-text">{{product.desc|safe}}</p>
             </div>
         </div>

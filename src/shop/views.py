@@ -6,7 +6,11 @@ from django.urls import reverse
 # Create your views here.
 
 def products_view(request):
-    product_list = shop_services.get_product_list()
+    category_name = request.GET.get('category')
+    if category_name:
+        product_list = shop_services.get_product_list_by_category_name(category_name)
+    else:
+        product_list = shop_services.get_product_list()
     context = {
         'product_list': product_list
     }
@@ -39,6 +43,7 @@ def category_add_view(request):
         'form': form,
     }
     return render(request, 'shop/category_create.html', context)
+
 
     
 
