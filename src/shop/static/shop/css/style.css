@@ -1,0 +1,13 @@
+.shop-logo{
+    color:white;
+    font-weight: 600;
+}
+
+.nav-link-custome{
+    color:white;
+}
+.row-flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
