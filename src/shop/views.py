@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .services import shop_services
-from .forms import ProductForm
+from .forms import CategoryForm, ProductForm
 from django.urls import reverse
 # Create your views here.
 
@@ -28,5 +28,17 @@ def product_add_view(request):
         'form': form,
     }
     return render(request, 'shop/product_create.html', context)
+
+def category_add_view(request):
+    form = CategoryForm(request.POST or None)
+    if form.is_valid():
+        category = form.save()
+        #После создания просмотра детального просмотра category можно перенаправлять туда
+        return redirect('shop:products')
+    context = {
+        'form': form,
+    }
+    return render(request, 'shop/category_create.html', context)
+
     
 
