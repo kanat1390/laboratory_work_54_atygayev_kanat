@@ -1,0 +1,404 @@
+[
+{
+    "model": "shop.category",
+    "pk": 3,
+    "fields": {
+        "name": "Фото и видеокамеры",
+        "desc": "<p>В данной категории замещаются&nbsp;</p>\r\n\r\n<p>&nbsp; &nbsp; &nbsp; -Видеокамеры</p>\r\n\r\n<p>&nbsp; &nbsp; &nbsp; -Фотокамеры</p>"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 4,
+    "fields": {
+        "name": "Смартфоны",
+        "desc": ""
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 5,
+    "fields": {
+        "name": "Музыкальные инструменты",
+        "desc": ""
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 11,
+    "fields": {
+        "name": "Камера Canon XA11 черный",
+        "desc": "<p>- поддержка видео высокого разрешения: Full HD 1080p<br />\r\n- матрица: 3.09 Мпикс<br />\r\n- интерфейсы: AV-выход, микрофонный вход, USB-интерфейс, HDMI-выход<br />\r\n- запись на карту памяти: да</p>",
+        "category": 3,
+        "created_at": "2022-09-25T11:31:22.014Z",
+        "price": "700.00",
+        "image": "products/images/canon_ax11.jpg"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 12,
+    "fields": {
+        "name": "Камера Sony FDR-AX53B черный",
+        "desc": "<p>- поддержка видео высокого разрешения: UHD 4K<br />\r\n- матрица: 8.29 Мпикс<br />\r\n- интерфейсы: Wi-Fi, USB-интерфейс, HDMI-выход, NFC<br />\r\n- запись на карту памяти: да</p>",
+        "category": 3,
+        "created_at": "2022-09-25T11:32:38.107Z",
+        "price": "800.00",
+        "image": "products/images/sony_ax53.jpg"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 13,
+    "fields": {
+        "name": "Смартфон Apple iPhone 13 128Gb черный",
+        "desc": "<p>- размер оперативной памяти: 4 ГБ<br />\r\n- технология nfc: да<br />\r\n- цвет: черный<br />\r\n- тип экрана: OLED, Super Retina XDR<br />\r\n- диагональ: 6.1 дюйм<br />\r\n- процессор: 6-ядерный Apple A15 Bionic<br />\r\n- объем встроенной памяти: 128 ГБ<br />\r\n- емкость аккумулятора: 3095 мАч</p>",
+        "category": 4,
+        "created_at": "2022-09-25T11:35:25.574Z",
+        "price": "1000.00",
+        "image": "products/images/iphone13.jpg"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 14,
+    "fields": {
+        "name": "Смартфон Samsung Galaxy A13 4 ГБ/64 ГБ черный",
+        "desc": "<p>- размер оперативной памяти: 4 ГБ<br />\r\n- технология nfc: да<br />\r\n- цвет: черный<br />\r\n- тип экрана: PLS TFT LCD<br />\r\n- диагональ: 6.6 дюйм<br />\r\n- процессор: 8-ядерный Exynos 850<br />\r\n- объем встроенной памяти: 64 ГБ<br />\r\n- емкость аккумулятора: 5000 мАч</p>",
+        "category": 4,
+        "created_at": "2022-09-25T11:37:29.116Z",
+        "price": "130.00",
+        "image": "products/images/samsung.jpg"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 15,
+    "fields": {
+        "name": "Саксофон Jupiter JAS1100Q",
+        "desc": "<p>- вид: альт<br />\r\n- тип: профессиональный<br />\r\n- регулируемый упор для большого пальца: да<br />\r\n- материал корпуса: латунь<br />\r\n- материал раструба: латунь</p>",
+        "category": 5,
+        "created_at": "2022-09-25T11:39:10.839Z",
+        "price": "1800.00",
+        "image": "products/images/jupyter.jpg"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 16,
+    "fields": {
+        "name": "Саксофон Jupiter JAS1100SQ",
+        "desc": "<p>- вид: альт<br />\r\n- тип: профессиональный<br />\r\n- регулируемый упор для большого пальца: да<br />\r\n- материал корпуса: латунь<br />\r\n- материал раструба: латунь</p>",
+        "category": 5,
+        "created_at": "2022-09-25T11:43:35.902Z",
+        "price": "2500.00",
+        "image": "products/images/jupyter2.jpg"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add category",
+        "content_type": 7,
+        "codename": "add_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change category",
+        "content_type": 7,
+        "codename": "change_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete category",
+        "content_type": 7,
+        "codename": "delete_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view category",
+        "content_type": 7,
+        "codename": "view_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add product",
+        "content_type": 8,
+        "codename": "add_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change product",
+        "content_type": 8,
+        "codename": "change_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete product",
+        "content_type": 8,
+        "codename": "delete_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view product",
+        "content_type": 8,
+        "codename": "view_product"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$977PqsDS2d9VFb71Qymdgb$MNFHDUp7fWQbQfpjM5DoAq7VeD2aBHVgyw09n0HJHwU=",
+        "last_login": "2022-09-25T05:50:20.544Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-09-24T17:28:10.839Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]
