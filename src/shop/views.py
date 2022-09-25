@@ -77,6 +77,11 @@ def product_edit_view(request, pk):
     }
     return render(request, 'shop/product_edit.html', context)
 
+def product_delete_view(request, pk):
+    product = shop_services.get_product_by_pk(pk)
+    product.delete()
+    return redirect('shop:products')
+
 
     
 

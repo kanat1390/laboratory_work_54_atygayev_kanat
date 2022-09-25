@@ -10,7 +10,7 @@
     {% for category in category_list %}
     <li class="list-group-item d-flex justify-content-between" style="width:50%;">
         {{category.name}}
-        <div>
+        <div class="d-flex gap-3">
             <a href="{% url 'shop:category_delete' category.pk %}"><img src="{% static 'shop/icons/trash.svg'%}"
                     alt=""></a>
             <a href="{% url 'shop:category_edit' category.pk %}"><img src="{% static 'shop/icons/pencil-square.svg'%}"
