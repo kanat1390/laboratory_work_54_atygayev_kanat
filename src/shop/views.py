@@ -50,6 +50,17 @@ def categories_view(request):
     }
     return render(request, 'shop/category_list.html', context)
 
+def category_edit_view(request, pk):
+    category = shop_services.get_category_by_pk(pk)
+    form = CategoryForm(request.POST or None, instance=category)
+    if form.is_valid():
+        form.save()
+        return redirect('shop:categories')
+    context={
+        'form':form,
+    }
+    return render(request, 'shop/category_edit.html', context)
+
 
     
 

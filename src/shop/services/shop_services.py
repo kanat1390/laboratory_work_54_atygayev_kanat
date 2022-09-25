@@ -12,3 +12,6 @@ def get_product_list_by_category_name(category_name):
 
 def get_category_list():
     return Category.objects.all()
+
+def get_category_by_pk(pk):
+    return get_object_or_404(Category, pk=pk)
