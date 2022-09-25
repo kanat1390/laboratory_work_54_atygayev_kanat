@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block title %}
 {{product.name}}
 {% endblock title %}
@@ -12,6 +12,11 @@
             <img src="{{product.image.url}}" class="img-fluid rounded-start" style="max-height:300px;" alt="...">
         </div>
         <div class="col-md-8">
+            <div class="d-flex justify-content-end">
+                <a href=""><img src="{% static 'shop/icons/trash.svg'%}" alt=""></a>
+                <a href="{% url 'shop:product_edit' product.pk %}"><img src="{% static 'shop/icons/pencil-square.svg'%}"
+                        alt=""></a>
+            </div>
             <div class="card-body">
                 <h5 class="card-title">{{product.name}}</h5>
                 <p class="card-text"><small class="text-muted">Цена: </small>{{product.get_price}}</p>

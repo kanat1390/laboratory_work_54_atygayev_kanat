@@ -66,6 +66,17 @@ def category_delete_view(request, pk):
     category.delete()
     return redirect('shop:categories')
 
+def product_edit_view(request, pk):
+    product = shop_services.get_product_by_pk(pk)
+    form = ProductForm(request.POST or None,request.FILES or None, instance=product)
+    if form.is_valid():
+        form.save()
+        return redirect(reverse('shop:product', kwargs={'pk': product.id}))
+    context={
+        'form':form,
+    }
+    return render(request, 'shop/product_edit.html', context)
+
 
     
 
