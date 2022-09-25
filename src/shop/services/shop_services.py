@@ -9,3 +9,6 @@ def get_product_by_pk(pk):
 
 def get_product_list_by_category_name(category_name):
     return Product.objects.filter(category__name=category_name)
+
+def get_category_list():
+    return Category.objects.all()

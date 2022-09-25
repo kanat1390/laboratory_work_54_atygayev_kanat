@@ -24,11 +24,10 @@ def product_view(request, pk):
     return render(request, 'shop/product_detail.html', context)
 
 def product_add_view(request):
-    form = ProductForm(request.POST, request.FILES)
+    form = ProductForm(request.POST or None, request.FILES or None)
     if form.is_valid():
         product = form.save()
         return redirect(reverse('shop:product', kwargs={'pk':product.id}))
-    form = ProductForm()
     context = {
         'form': form,
     }
@@ -43,6 +42,13 @@ def category_add_view(request):
         'form': form,
     }
     return render(request, 'shop/category_create.html', context)
+
+def categories_view(request):
+    category_list = shop_services.get_category_list()
+    context = {
+        'category_list': category_list,
+    }
+    return render(request, 'shop/category_list.html', context)
 
 
     
