@@ -12,7 +12,7 @@ class Category(models.Model):
 
 class Product(models.Model):
     name = models.CharField(null=False, blank=False, max_length=50)
-    desc = RichTextField(null=False, blank=False)
+    desc = RichTextField(null=True, blank=True)
     category = models.ForeignKey(to='Category', on_delete=models.CASCADE, blank=False, null=False, related_name='products')
     created_at = models.DateTimeField(auto_now_add=True)
     price = models.DecimalField(max_digits=15, decimal_places=2, default=0.00)

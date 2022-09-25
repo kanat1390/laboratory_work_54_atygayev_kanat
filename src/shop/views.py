@@ -61,6 +61,11 @@ def category_edit_view(request, pk):
     }
     return render(request, 'shop/category_edit.html', context)
 
+def category_delete_view(request, pk):
+    category = shop_services.get_category_by_pk(pk)
+    category.delete()
+    return redirect('shop:categories')
+
 
     
 

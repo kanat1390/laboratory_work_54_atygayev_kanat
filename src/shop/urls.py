@@ -5,7 +5,8 @@ from .views import (
     product_add_view, 
     category_add_view,
     categories_view,
-    category_edit_view
+    category_edit_view,
+    category_delete_view
     )
 
 app_name = 'shop'
@@ -17,4 +18,5 @@ urlpatterns = [
     path('categories/add/', category_add_view, name='category_add'),
     path('categories/', categories_view, name='categories'),
     path('categories/<int:pk>/edit/', category_edit_view, name='category_edit'),
+    path('categories/<int:pk>/delete/', category_delete_view, name='category_delete')
 ]
